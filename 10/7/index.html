@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+	   <div id='app'>
+           <input type='checkbox' v-model='x' value='a'>
+           <input type='checkbox' v-model='x' value='b'>
+           <input type='checkbox' v-model='x' value='c'>
+           <ul>
+			<li v-for="item in x">{{ item }}</li>
+		  </ul>
+        </div>
+        <script src="script.js"> </script>  
+    </body>
+</html>
