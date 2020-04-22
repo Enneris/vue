@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+	   <div id='app'>
+           <input type='checkbox' v-model='check' v-on:click='changecol'>
+           <p v-bind:style='{color:value}'>Абзац</p>
+        </div>
+        <script src="script.js"> </script>  
+    </body>
+</html>
