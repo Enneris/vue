@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+	   <div id='app'>
+           <input id='ru' name="radio" type="radio" v-model="type" value="ru">
+           <label for='ru'>Ru</label>
+           <br>
+	       <input id='en' name="radio" type="radio" v-model="type" value="en">
+           <label for='en'>En</label>
+           <br>
+	       <input id='de' name="radio" type="radio" v-model="type" value="de">
+           <label for='de'>De</label>
+           <br>
+           <p>{{type}}</p>
+        </div>
+        <script src="script.js"> </script>  
+    </body>
+</html>
