@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+	   <div id='app'>
+            <button v-on:click='list'>Список</button>
+            <textarea v-model='message'></textarea>
+           <ul>
+			<li v-for="item in items">{{ item }}</li>
+		  </ul>
+        </div>
+        <script src="script.js"> </script>  
+    </body>
+</html>
