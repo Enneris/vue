@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+	   <div id='app'>
+		      <a href="#" v-on:click.left.prevent="text = 'left'"
+                v-on:click.right.prevent="text = 'right'"
+                v-on:click.middle.prevent="text = 'middle'"
+            >Cсылка</a>
+           <p v-if="text != ''">{{ text}}</p>
+        </div>
+        <script src="script.js"> </script>  
+    </body>
+</html>
